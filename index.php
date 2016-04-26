@@ -46,7 +46,6 @@ include_once('header.php');
  -->  
 <div style="bottom: 0px;padding:0;">
 <?php 
-echo $password=md5("test3".ALL_PS."123456");
 include_once('foot.php');
 ?>
 </div>
