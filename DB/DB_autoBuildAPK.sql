@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50505
 File Encoding         : 65001
 
-Date: 2016-04-26 15:02:10
+Date: 2016-04-26 17:51:52
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -83,6 +83,7 @@ CREATE TABLE `source` (
   `p_id` int(5) NOT NULL COMMENT '环境标识',
   `v_version` varchar(50) COLLATE gbk_bin NOT NULL COMMENT 'version内渠道号',
   `s_status` int(5) NOT NULL COMMENT '0，成功；1,失败',
+  `client_platform` int(2) NOT NULL,
   `percentage` int(5) NOT NULL DEFAULT '0' COMMENT '临时存储进度',
   `s_value` text COLLATE gbk_bin NOT NULL COMMENT '存放每次提交的所有sourceid',
   `s_submitdatetime` datetime DEFAULT NULL COMMENT '提交时间',
@@ -98,18 +99,18 @@ CREATE TABLE `source` (
 -- ----------------------------
 -- Records of source
 -- ----------------------------
-INSERT INTO `source` VALUES ('1', '1', '0', '1', 'v3.2.0', '1', '11', 0x76767630310A7676763032736166736166617366617366640A7676763033666473660A767676303466666666660A767676303573616661660A767676303661736173660A76767630370A767676303873616466736166647361667676763020390A76767631300A7676763131, '2013-01-17 19:22:57', '2013-01-18 14:11:16', 'test@kinggoo.com', '2', 'test@kinggoo.com', 0xE69CAAE689A7E8A18CE79BB8E585B3E6938DE4BD9C, '无描述');
-INSERT INTO `source` VALUES ('2', '1', '0', '1', 'v3.2.0', '1', '1', '', '2013-01-17 20:23:12', '2013-01-17 20:23:12', 'test@kinggoo.com', '1', 'test@kinggoo.com', 0xE69CAAE689A7E8A18CE79BB8E585B3E6938DE4BD9C, '无描述');
-INSERT INTO `source` VALUES ('3', '1', '0', '1', 'v3.2.0', '1', '1', '', '2013-01-17 20:26:38', '2013-01-17 20:26:38', 'test@kinggoo.com', '1', 'test@kinggoo.com', 0xE69CAAE689A7E8A18CE79BB8E585B3E6938DE4BD9C, '无描述');
-INSERT INTO `source` VALUES ('4', '1', '0', '1', 'v3.2.0', '1', '1', 0x30, '2013-01-17 20:27:37', '2013-01-17 20:27:37', 'test@kinggoo.com', '1', 'test@kinggoo.com', 0xE69CAAE689A7E8A18CE79BB8E585B3E6938DE4BD9C, '无描述');
-INSERT INTO `source` VALUES ('5', '1', '0', '1', 'v3.2.0', '1', '1', 0x30, '2013-01-17 20:30:12', '2013-01-17 20:30:12', 'test@kinggoo.com', '1', 'test@kinggoo.com', 0xE69CAAE689A7E8A18CE79BB8E585B3E6938DE4BD9C, '无描述');
-INSERT INTO `source` VALUES ('6', '1', '0', '1', 'v3.2.0', '1', '1', 0x30, '2013-01-17 20:45:44', '2013-01-17 20:45:44', 'test@kinggoo.com', '1', 'test@kinggoo.com', 0xE69CAAE689A7E8A18CE79BB8E585B3E6938DE4BD9C, 'f');
-INSERT INTO `source` VALUES ('7', '1', '0', '1', 'v3.2.0', '1', '1', 0x30, '2013-01-17 20:49:38', '2013-01-17 20:49:38', 'test@kinggoo.com', '1', 'test@kinggoo.com', 0xE69CAAE689A7E8A18CE79BB8E585B3E6938DE4BD9C, '无描述');
-INSERT INTO `source` VALUES ('8', '1', '0', '1', 'v3.2.0', '1', '1', 0x30, '2013-01-17 20:52:21', '2013-01-17 20:52:21', 'test@kinggoo.com', '1', 'test@kinggoo.com', 0xE69CAAE689A7E8A18CE79BB8E585B3E6938DE4BD9C, '无描述');
-INSERT INTO `source` VALUES ('9', '1', '0', '1', 'v3.2.0', '1', '1', 0x30, '2013-01-17 20:54:00', '2013-01-17 20:54:00', 'test@kinggoo.com', '1', 'test@kinggoo.com', 0xE69CAAE689A7E8A18CE79BB8E585B3E6938DE4BD9C, '无描述');
-INSERT INTO `source` VALUES ('10', '1', '0', '1', 'v3.2.0', '1', '1', '', '2013-01-17 20:54:38', '2013-01-17 20:54:38', 'test@kinggoo.com', '1', 'test@kinggoo.com', 0xE69CAAE689A7E8A18CE79BB8E585B3E6938DE4BD9C, '无描述');
-INSERT INTO `source` VALUES ('11', '1', '0', '1', 'v3.2.0', '1', '2', 0x6673667330310A667366733032, '2013-01-17 21:00:03', '2013-01-17 21:00:03', 'test@kinggoo.com', '1', 'test@kinggoo.com', 0xE69CAAE689A7E8A18CE79BB8E585B3E6938DE4BD9C, '无描述');
-INSERT INTO `source` VALUES ('12', '2', '1', '1', '1', '1', '1', 0x666631313131312E61706B20206775616E, '2013-01-18 18:06:26', '2013-01-18 18:06:26', 'test@kinggoo.com', '2', 'test@kinggoo.com', 0xE69CAAE689A7E8A18CE79BB8E585B3E6938DE4BD9C, 'f');
+INSERT INTO `source` VALUES ('1', '1', '0', '1', 'v3.2.0', '1', '0', '11', 0x76767630310A7676763032736166736166617366617366640A7676763033666473660A767676303466666666660A767676303573616661660A767676303661736173660A76767630370A767676303873616466736166647361667676763020390A76767631300A7676763131, '2013-01-17 19:22:57', '2013-01-18 14:11:16', 'test@kinggoo.com', '2', 'test@kinggoo.com', 0xE69CAAE689A7E8A18CE79BB8E585B3E6938DE4BD9C, '无描述');
+INSERT INTO `source` VALUES ('2', '1', '0', '1', 'v3.2.0', '1', '0', '1', '', '2013-01-17 20:23:12', '2013-01-17 20:23:12', 'test@kinggoo.com', '1', 'test@kinggoo.com', 0xE69CAAE689A7E8A18CE79BB8E585B3E6938DE4BD9C, '无描述');
+INSERT INTO `source` VALUES ('3', '1', '0', '1', 'v3.2.0', '1', '0', '1', '', '2013-01-17 20:26:38', '2013-01-17 20:26:38', 'test@kinggoo.com', '1', 'test@kinggoo.com', 0xE69CAAE689A7E8A18CE79BB8E585B3E6938DE4BD9C, '无描述');
+INSERT INTO `source` VALUES ('4', '1', '0', '1', 'v3.2.0', '1', '0', '1', 0x30, '2013-01-17 20:27:37', '2013-01-17 20:27:37', 'test@kinggoo.com', '1', 'test@kinggoo.com', 0xE69CAAE689A7E8A18CE79BB8E585B3E6938DE4BD9C, '无描述');
+INSERT INTO `source` VALUES ('5', '1', '0', '1', 'v3.2.0', '1', '0', '1', 0x30, '2013-01-17 20:30:12', '2013-01-17 20:30:12', 'test@kinggoo.com', '1', 'test@kinggoo.com', 0xE69CAAE689A7E8A18CE79BB8E585B3E6938DE4BD9C, '无描述');
+INSERT INTO `source` VALUES ('6', '1', '0', '1', 'v3.2.0', '1', '0', '1', 0x30, '2013-01-17 20:45:44', '2013-01-17 20:45:44', 'test@kinggoo.com', '1', 'test@kinggoo.com', 0xE69CAAE689A7E8A18CE79BB8E585B3E6938DE4BD9C, 'f');
+INSERT INTO `source` VALUES ('7', '1', '0', '1', 'v3.2.0', '1', '0', '1', 0x30, '2013-01-17 20:49:38', '2013-01-17 20:49:38', 'test@kinggoo.com', '1', 'test@kinggoo.com', 0xE69CAAE689A7E8A18CE79BB8E585B3E6938DE4BD9C, '无描述');
+INSERT INTO `source` VALUES ('8', '1', '0', '1', 'v3.2.0', '1', '0', '1', 0x30, '2013-01-17 20:52:21', '2013-01-17 20:52:21', 'test@kinggoo.com', '1', 'test@kinggoo.com', 0xE69CAAE689A7E8A18CE79BB8E585B3E6938DE4BD9C, '无描述');
+INSERT INTO `source` VALUES ('9', '1', '0', '1', 'v3.2.0', '1', '0', '1', 0x30, '2013-01-17 20:54:00', '2013-01-17 20:54:00', 'test@kinggoo.com', '1', 'test@kinggoo.com', 0xE69CAAE689A7E8A18CE79BB8E585B3E6938DE4BD9C, '无描述');
+INSERT INTO `source` VALUES ('10', '1', '0', '1', 'v3.2.0', '1', '0', '1', '', '2013-01-17 20:54:38', '2013-01-17 20:54:38', 'test@kinggoo.com', '1', 'test@kinggoo.com', 0xE69CAAE689A7E8A18CE79BB8E585B3E6938DE4BD9C, '无描述');
+INSERT INTO `source` VALUES ('11', '1', '0', '1', 'v3.2.0', '1', '0', '2', 0x6673667330310A667366733032, '2013-01-17 21:00:03', '2013-01-17 21:00:03', 'test@kinggoo.com', '1', 'test@kinggoo.com', 0xE69CAAE689A7E8A18CE79BB8E585B3E6938DE4BD9C, '无描述');
+INSERT INTO `source` VALUES ('12', '2', '1', '1', '1', '1', '0', '1', 0x666631313131312E61706B20206775616E, '2013-01-18 18:06:26', '2013-01-18 18:06:26', 'test@kinggoo.com', '2', 'test@kinggoo.com', 0xE69CAAE689A7E8A18CE79BB8E585B3E6938DE4BD9C, 'f');
 
 -- ----------------------------
 -- Table structure for user_admin
