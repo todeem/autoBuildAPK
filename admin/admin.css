@@ -1,0 +1,199 @@
+* {
+	padding: 5;
+	margin: 5
+}
+
+body {
+	font-family: arial, sans-serif;
+	font-size: 13px;
+}
+
+img {
+	vertical-align: middle;
+	border: 0px;
+}
+
+a {
+	text-decoration: none;
+}
+.upleft span{
+	border: 1px solid #ccc;
+	padding: 5px;
+
+	}
+
+.divline {
+	position: relative;
+	/*border: 2px solid #0C9;*/
+	font-size: 15px;
+	border: 2px dashed #ccc;
+	padding: 5px;
+	margin:10px 2px 4px 2px;
+	-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;
+}
+
+.headdivline {
+	position: relative;
+	/*border: 2px solid #0C9;*/
+	font-size: 15px;
+	border: 2px dashed #ccc;
+	padding: 6px;
+	margin:10px 2px 4px 2px;
+	-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;
+}
+
+.hide {
+	position: relative;
+	font-size: 18px;
+	border: 1px solid #ccc;
+	padding: 5px;
+	margin-top: 5px;
+	margin-left: 2px;
+	margin-bottom: 5px;
+	margin-right: 2px;
+}
+
+table {
+	border: solid 1px #f90;
+	border-collapse: collapse;
+	background: #ffc;
+	border-collapse: collapse;
+}
+
+th {
+	padding: 1px;
+	font-weight: bold;
+	border: solid 1px #f90;
+	height: 22px;
+}
+
+tr {
+
+}
+
+td {
+	border: solid 1px #f90;
+	height: 20px;
+	padding: 2 5px;
+	margin-top: 5px;
+	margin-left: 2px;
+	margin-bottom: 5px;
+	margin-right: 2px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.divline label {
+	font-weight: bold;
+	vertical-align: top;
+	font-size: 18px;
+	COLOR: #000000;
+	font-family: 微软雅黑, arial, sans-serif;
+	font-weight: normal;
+}
+
+.left {
+	position: relative;
+	border: 1px dashed #ccc;
+	padding:5px;
+	margin: 2px;
+	display: none;
+	/*OVERFLOW: scroll; */
+}
+
+
+.upleft {
+	position: relative;
+	border: 1px dashed #ccc;
+	padding: 5px;
+	font-size:13px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 5px;
+	margin-left: 2px;
+	margin-bottom: 5px;
+	margin-right: 2px;
+}
+
+.upbrowse{
+	position: relative;
+	border: 1px solid #ccc;
+	width:235px;
+	padding: 5px;
+	margin-top: 5px;
+	margin-left: 2px;
+	margin-bottom: 5px;
+	margin-right: 2px;
+	
+	}
+
+/*
+#center {
+
+	border: 1px dashed #ccc;
+	float: left;
+	width: 20%;
+	margin-left: 10px;
+
+}
+
+#right {
+	border: 1px dashed #ccc;
+	float: left;
+	width: 20%;
+	margin-left: 10px;
+
+}*/
+.tuiChu {
+	float: right;
+	font-size: 14px;
+	position: absolute;
+	top: 6px;
+	right: 8px;
+}
+
+.tuiChu a {
+	BORDER-LEFT: #ff9966 1px solid; /*左边框*/
+	BORDER-RIGHT: #ff9966 1px solid; /*右边框*/
+	BORDER-TOP: #ff9966 1px solid; /*上边框*/
+	BORDER-BOTTOM: #ff9966 1px solid; /*下边框*/
+	PADDING-LEFT: 2px; /*左间隙*/
+	PADDING-RIGHT: 2px; /*右间隙*/
+	PADDING-TOP: 2px; /*上间隙*/
+	PADDING-BOTTOM: 2px; /*下间隙*/
+	FONT-SIZE: 14px; /*字号*/
+	CURSOR: hand; /*光标类型*/
+	COLOR: #000055; /*字色*/
+	FILTER: progid :           DXImageTransform.Microsoft.Gradient (       
+		   GradientType =           0, StartColorStr =           #ffffff,
+		EndColorStr =  
+		    
+		   #ff9966 ); /*滤镜*/
+}
+
+#preview {
+	border: 1px solid #cccccc;
+	background: #339933;
+	color: #fff;
+	padding: 5px;
+	display: none;
+	position: absolute;
+}
+
+.footer {
+	position: relative;
+	padding: 5px 10px;
+	margin:10px 2px 4px 2px;
+	font-size: 13px;
+	border: 2px dashed #ccc;
+	color: #999;
+	font-family: 微软雅黑, Verdana, sans-serif;
+	line-height: 13px;
+	text-align: center;
+	line-height: 20px;
+	-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;
+}
+
+/*    上传文件*/

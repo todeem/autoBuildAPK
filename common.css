@@ -1,0 +1,220 @@
+body {
+	font-family: arial, sans-serif;
+	font-size: 13px;
+}
+#thisform {
+	font-family: 微软雅黑, Georgia, serif;
+	font-size: 14px;
+	color: #999;
+}
+img{
+	vertical-align:middle;
+	border="0"
+	}
+.hr0{ height:1px;border:none;border-top:1px dashed #ccc;}
+td {
+	padding: 1px;
+	height: 20px;
+	padding: 5px;
+	margin-top: 5px;
+	margin-left: 2px;
+	margin-bottom: 5px;
+	margin-right: 2px;
+}
+#thisform label {
+	font-family: 微软雅黑, Verdana, sans-serif;
+	font-weight: bold;
+	color: #660000;
+}
+
+#thisform fieldset {
+	border: 1px solid #cc;
+	padding: 0 20px;
+	border:2px dashed #ccc;
+	-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;
+}
+
+#thisform legend {
+	font-family: 微软雅黑, arial, sans-serif;
+	font-weight: bold;
+	font-size: 90%;
+	color: #666;
+	background: #eee;
+	border: 1px solid #ccc;
+	border-bottom-color: #999;
+	border-right-color: #999;
+	padding: 7px 8px;
+	-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;
+}
+
+.headerwhite {
+	position: relative;
+	/*border: 2px solid #0C9;*/
+	font-size:100%;
+	border:2px dashed #ccc;
+	font-size: 15px;
+	padding: 6px;
+	margin:10px 2px 4px 2px;
+	-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;
+}
+.divline {
+	position: relative;
+	/*border: 2px solid #0C9;*/
+	font-size: 13px;
+	border: 2px dashed #ccc;
+	padding: 5px;
+	margin:10px 2px 4px 2px;
+	-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;
+}
+.divline span{
+	 font-size: 13px;
+	}
+.hide {
+	position: relative;
+	font-size: 18px;
+	border: 1px solid #ccc;
+	padding: 5px;
+	margin-top: 5px;
+	margin-left: 2px;
+	margin-bottom: 5px;
+	margin-right: 2px;
+}
+.upleft {
+	position: relative;
+	border: 1px dashed #ccc;
+	padding: 5px;
+	font-size:13px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 5px;
+	margin-left: 2px;
+	margin-bottom: 5px;
+	margin-right: 2px;
+}
+.upleft span{
+	border: 1px solid #ccc;
+	padding: 5px;
+
+	}
+
+#thisform label  .abtn_3 {
+	font-size: 14px;
+	line-height: 1em;
+	background: url() no-repeat -33px -123px;
+	text-decoration: none;
+	position: relative;
+}
+
+#thisform  label  .abtn_3:hover {
+	text-indent: 0;
+}
+
+/* 提示框 */
+.hintsB {
+	display: none;
+}
+
+.abtn_3:hover  .hintsB {
+	display: block;
+	position: absolute;
+	top: -1.3em;
+	left: 20px;
+	width: 180px;
+	padding: 0 0 0 5px;
+	background: url() no-repeat 0 center;
+	color: #326324;
+	cursor: text;
+	font-weight: normal;
+}
+
+@media all and (min-width: 0px) {
+	.abtn_3:hover .hintsB {
+		top: auto;
+		left: auto;
+	}
+}
+
+.abtn_3:hover .hintsB div {
+	line-height: 18px;
+	padding: 7px 4px 6px 6px;
+	border: 1px solid #bed48f;
+	border-left: none;
+	background-color: #effaeb;
+	font-size: 12px !important;
+}
+
+.tuiChu {
+	font-size: 14px;
+	position: absolute;
+	top: 6px;
+	right: 8px;
+}
+
+.lieBiao {
+	font-size: 14px;
+	position: absolute;
+	left: 400px;
+}
+
+.tuiChu a {
+	BORDER-LEFT: #ff9966 1px solid; /*左边框*/
+	BORDER-RIGHT: #ff9966 1px solid; /*右边框*/
+	BORDER-TOP: #ff9966 1px solid; /*上边框*/
+	BORDER-BOTTOM: #ff9966 1px solid; /*下边框*/
+	PADDING-LEFT: 2px; /*左间隙*/
+	PADDING-RIGHT: 2px; /*右间隙*/
+	PADDING-TOP: 2px; /*上间隙*/
+	PADDING-BOTTOM: 2px; /*下间隙*/
+	FONT-SIZE: 14px; /*字号*/
+	CURSOR: hand; /*光标类型*/
+	COLOR: #000055; /*字色*/
+	FILTER: progid :     DXImageTransform.Microsoft.Gradient (    
+		GradientType =     0, StartColorStr =     #ffffff, EndColorStr =    
+		#ff9966 ); /*滤镜*/
+}
+
+.c {
+	font-size: 14px;
+	COLOR: #000000;
+	font-family: 微软雅黑, arial, sans-serif;
+	font-weight: normal;
+}
+
+.std {
+	BORDER-BOTTOM: #000000 0px dotted;
+	BORDER-top: #000000 0px dotted;
+	BORDER-LEFT: #000000 0px dotted;
+	BORDER-RIGHT: #000000 0px dotted;
+}
+
+.footer {
+	position: relative;
+	padding: 5 10px;
+	margin-top: 20px;
+	margin-left: 2px;
+	margin-bottom: 5px;
+	margin-right: 2px;
+	font-size: 13px;
+	border: 2px dashed #ccc;
+	margin-top: 10px;
+	color: #999;
+	font-family: 微软雅黑, Verdana, sans-serif;
+	line-height: 13px;
+	text-align: center;
+	line-height: 20px;
+	-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;
+}
+#preview {
+	border: 1px solid #cccccc;
+	background: #339933;
+	color: #fff;
+	padding: 5px;
+	display: none;
+	position: absolute;
+}
+a {
+	text-decoration: none;
+}
+fieldset{
+	border:2px dashed #ccc;
+	}
