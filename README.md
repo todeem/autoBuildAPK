@@ -17,7 +17,7 @@ mysql> flush privileges;
 ```
 
 2) ### 修改 `config.php` 配置文件   
-* ##### 数据库配置
+* #### 数据库配置
 ```
 define("DB_HOST", 'localhost');	//主机名或IP   
 define("DB_DATA", 'sourceid');	// 数据库   
@@ -26,7 +26,7 @@ define("DB_PASSWORD", 'source');//数据库密码
 define("MYDBCHARSET", 'utf8');	//编码  
 ```
 
-* ##### 自定义部分
+* #### 自定义部分
 ```
 //密码自定义串 keys str
 define("ALL_PS", kinggoo.com);//自定义
@@ -34,7 +34,7 @@ define("ALL_PS", kinggoo.com);//自定义
 define("OVERTIME", 3600);//最大登陆超时时间，默认为一小时，单位为秒
 ```
 
-* #####  登陆帐号认证模式 
+* ####  登陆帐号认证模式 
 ```
 //是否采用LDAP/MYSQL帐号认证模式
 define("USELDAP",false);    //是否使用了ldap认证，true：使用ldap账户认证，false：使用数据库帐号认证
@@ -45,7 +45,7 @@ $ldapport = 389;//ldap的端口号
 $ldapbase = 'dc=kinggoo,dc=cn';//ldap的BN
 ```
 
-* ##### 文件目录配置
+* #### 文件目录配置
 ```
 //项目所在服务器根目录(这个地方会影响到class.show.php)
 define("PROHOME", '/var/www/html/source/'); 
@@ -58,7 +58,7 @@ define("UPFILEPATH", '../upfile/');
 define("TMP", 'tmp/'); 
 ```
 
-* ##### 上传
+* #### 上传
 ```
 //允许上传格式
 define("UPFILETYPE", 'apk'); 
@@ -68,7 +68,7 @@ define("UPFILESIZE", 6291456);
 
 ```
 
-* ##### FTP配置 
+* #### FTP配置 
 ```
 //ftp服务器地址
 define("FTP_HOST", 'pekdc1-mob-02.kinggoo.com');
@@ -85,7 +85,7 @@ define("FTP_READ", 'kinggoo');
 define("FTP_READPASSWD", 'kinggoo');
 ```
 
-* ##### 定义邮件相关
+* #### 定义邮件相关
 ```
 $administrator=array(
 "smtphost"=>"smtpsrv01.kinggoo.cn",               // smtp邮件服务器地址
@@ -116,7 +116,7 @@ global $administrator,$G_head,$G_aount,$G_foot,$G_ftp;
 ```
 
 
-* ##### shell下脚本调用内置参数的配置(多数都是根据各自包体配置方式不一样来修改)
+* #### shell下脚本调用内置参数的配置(多数都是根据各自包体配置方式不一样来修改)
 ```
 HOME_KEY //签名密钥文件
 KEY_STR  //签名密码
