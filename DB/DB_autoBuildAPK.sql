@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50505
 File Encoding         : 65001
 
-Date: 2016-04-26 17:51:52
+Date: 2016-04-26 18:07:26
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -94,7 +94,7 @@ CREATE TABLE `source` (
   `ftp` longtext COLLATE gbk_bin COMMENT 'ftp信息',
   `s_describe` varchar(600) COLLATE gbk_bin NOT NULL COMMENT '描述信息',
   PRIMARY KEY (`s_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=gbk COLLATE=gbk_bin;
+) ENGINE=MyISAM AUTO_INCREMENT=14 DEFAULT CHARSET=gbk COLLATE=gbk_bin;
 
 -- ----------------------------
 -- Records of source
@@ -174,7 +174,7 @@ CREATE TABLE `version` (
 -- ----------------------------
 -- Records of version
 -- ----------------------------
-INSERT INTO `version` VALUES ('1', 'liuxue', '426', 'AndroidPhone_v3.2.0.0000_05_20121122_online_unsign_versionCode426.apk', '0', '4.14109', '../upfile/', '0', 'v3.2.0', '1', '2013-01-17 19:22:34');
-INSERT INTO `version` VALUES ('2', 'liuxue', '1', '1.apk', '0', '4.14109', '../upfile/', '1', '1', '1', '2013-01-18 17:48:05');
-INSERT INTO `version` VALUES ('3', 'liuxue', '2', '2.apk', '0', '4.14109', '../upfile/', '1', '2', '2', '2013-01-18 17:48:05');
+INSERT INTO `version` VALUES ('1', 'admin', '426', 'AndroidPhone_v3.2.0.0000_05_20121122_online_unsign_versionCode426.apk', '0', '4.14109', '../upfile/', '0', 'v3.2.0', '1', '2013-01-17 19:22:34');
+INSERT INTO `version` VALUES ('2', 'admin', '1', '1.apk', '0', '4.14109', '../upfile/', '1', '1', '1', '2013-01-18 17:48:05');
+INSERT INTO `version` VALUES ('3', 'admin', '2', '2.apk', '0', '4.14109', '../upfile/', '1', '2', '2', '2013-01-18 17:48:05');
 INSERT INTO `version` VALUES ('4', 'admin', '2323', 'mhash_0.9.9.apk', '0', '0.87702', '../upfile/', '0', 'v1', '1', '2016-04-26 14:26:53');
