@@ -88,15 +88,15 @@ define("FTP_READPASSWD", 'kinggoo');
 * 定义邮件相关
 ```
 $administrator=array(
-"smtphost"=>"smtpsrv01.kinggoo.cn",               // smtp邮件服务器地址
+"smtphost"=>"smtpsrv01.kinggoo.com",               // smtp邮件服务器地址
 "charset"=>"utf-8",                               // 文件编码
 "port"=>"25",                                     // smtp端口
-"fromadds"=>"admin@kinggoo.cn",                   // 对方显示显示的邮件地址
-"fromname"=>"admin@kinggoo.cn",                   // 对方显示显示的邮件名称
-"mail"=>"admin@kinggoo.cn",                       // 邮箱地址
-"name"=>"admin@kinggoo.cn",                       // 邮箱用户名
+"fromadds"=>"admin@kinggoo.com",                   // 对方显示显示的邮件地址
+"fromname"=>"admin@kinggoo.com",                   // 对方显示显示的邮件名称
+"mail"=>"admin@kinggoo.com",                       // 邮箱地址
+"name"=>"admin@kinggoo.com",                       // 邮箱用户名
 "password"=>"KingGoo.com",                        // 邮箱密码
-"site"=>"http://pek7-qas-01.kinggoo.cn/source/",  // autoBuildAPK WEB地址
+"site"=>"http://pek7-qas-01.kinggoo.com/source/",  // autoBuildAPK WEB地址
 "apply"=>"shenqing.php",                          // 发送申请开通帐号（不知道为什么没写）
 "searcher"=>"1"                                   // 开启搜索查看模式(好像是可以不让其他人检索非自己提交的包体)
 );
@@ -133,7 +133,7 @@ mysqlport=3306
 # 
 # ----------------------------------# 
 # --- FTP配置
-ftp_adds="pekdc1-mob-02.kinggoo.cn"
+ftp_adds="pekdc1-mob-02.kinggoo.com"
 ftp_user="phpftp"
 ftp_passwd="phpftpwrite"
 
